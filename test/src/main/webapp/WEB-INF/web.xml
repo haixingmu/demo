@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>insert</servlet-name>
+  	<servlet-class>com.yxe.demo.InsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>insert</servlet-name>
+	  <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>delete</servlet-name>
+  	<servlet-class>com.yxe.demo.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>delete</servlet-name>
+	  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>update</servlet-name>
+  	<servlet-class>com.yxe.demo.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>update</servlet-name>
+	  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>select</servlet-name>
+  	<servlet-class>com.yxe.demo.SelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>select</servlet-name>
+	  <url-pattern>/select</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
